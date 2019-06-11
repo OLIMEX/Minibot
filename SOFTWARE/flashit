@@ -1,0 +1,1 @@
+sudo avrdude -c stk500v2 -B 20 -b 19200 -P /dev/ttyACM0 -p t85 -U flash:w:minibot.hex -U lfuse:w:0xe1:m -U hfuse:w:0x5d:m -U efuse:w:0xfe:m
